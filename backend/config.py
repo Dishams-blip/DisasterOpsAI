@@ -8,6 +8,7 @@ load_dotenv()
 
 class Config:
     SECRET_KEY = os.getenv("SECRET_KEY")
+    JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 
     DB_HOST = os.getenv("DB_HOST")
     DB_PORT = os.getenv("DB_PORT")
